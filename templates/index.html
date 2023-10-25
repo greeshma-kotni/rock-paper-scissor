@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Rock, Paper, Scissors Showdown: Make Your Move!</h1>
+    <div id="game">
+        <div id="choices">
+            <div id="userChoice" class="choice">
+                <h2>Your Choice</h2>
+                <img id="rock" src="{{ url_for('static', filename='images/rock.png') }}" alt="Rock" onclick="makeChoice('rock')">
+                <img id="paper" src="{{ url_for('static', filename='images/paper.png') }}" alt="Paper" onclick="makeChoice('paper')">
+                <img id="scissors" src="{{ url_for('static', filename='images/scissors.png') }}" alt="Scissors" onclick="makeChoice('scissors')">
+            </div>
+            <div id="computerChoice" class="choice">
+                <h2>Computer's Choice</h2>
+                <img id="computerImg" src="" alt="">
+            </div>
+        </div>
+        <div id="result">
+            <h2>Result</h2>
+            <p id="message">Choose an option above.</p>
+            <button id="reset" onclick="resetGame()">Play Again</button>
+        </div>
+    </div>    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Center the game container */
+#game {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style for the h1 heading */
+  /* Style for the h1 heading */
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center; /* Center-align the text */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px; /* Add some padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  
+  /* Style for the choices container */
+  #choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  /* Style for each choice (user's and computer's) */
+  .choice {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Style for the user's choice images */
+  #rock, #paper, #scissors {
+    cursor: pointer;
+    max-width: 80px; /* Decrease the max-width to 80px */
+    margin: 10px;
+    transition: transform 0.2s;
+  }
+  
+  /* Style for the result section */
+  #result {
+    margin: 20px;
+  }
+  
+  /* Style for the message paragraph */
+  #message {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  /* Style for the Play Again button */
+  #reset {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #reset:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the computer's choice image */
+  #computerImg {
+    max-width: 80px; /* Decrease the max-width to 80px */
+  }
+  
